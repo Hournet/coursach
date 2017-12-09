@@ -1,0 +1,1 @@
+v-for="item in items"
