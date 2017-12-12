@@ -1,12 +1,117 @@
 //  Imports
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dosis:200,300,400,500,600,700,800|Fredoka+One|Permanent+Marker|Press+Start+2P|Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dosis:200,300,400,500,600,700,800|Fredoka+One|Permanent+Marker|Press+Start+2P|Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900|Vibur&subset=cyrillic')
+
+// font-familys
+// {
+// font-family: 'Amatic SC', cursive
+// font-family: 'Press Start 2P', cursive
+// font-family: 'Permanent Marker', cursive
+// font-family: 'Fredoka One', cursive
+// font-family: 'Dosis', sans-serif
+// font-family: 'Roboto', sans-serif
+// font-family: 'Raleway', sans-serif
+// font-family: 'Vibur', cursive
+//} 
+
+$green_vue: #41B883
+$yellow_navi: #fff200
+$space_gray: #263238
+$white_cloud: #FAFAFA
+$gray: #24262c
+$pinky: #FF80AB
+
+body
+    font-family: 'Permanent Marker'
+    background: url('../img/main-bg.jpg') fixed no-repeat
+    background-color: $gray
+    color: $white_cloud
+    height: 100vh
+    display: flex
+    align-items: center
+    align-content: center
+    justify-content: center
+
+nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: center 
+    justify-content: center
+    background: inherit
+    background-color: $gray
+    height: 100vh
+    width: 100vh
+    // filter: blur(10px)
+    // // background: inherit
+    // // position: absolute
+    // // overflow: hidden
+    // // top: 50%
+    // // left: 50%
+    // // margin-left: -175px
+    // // margin-top: -250px
+    // border-radius: 8px
+    &:before
+        background: inherit
+        filter: blur(10px)
+        box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2)
+        
+
+input[type="submit"] 
+    display: flex
+    line-height: 100px
+    justify-content: center
+    // display: block
+    font-size: 2.5em
+    color: $space_gray
+    font-family: 'Dosis'
+    font-weight: 800
+    background-color: $yellow_navi
+    width: 300px
+    height: 100px
+    box-shadow: 0px 4px 70px -16px $yellow_navi
+    border-radius: 5px
+    border: 0
+    cursor: pointer
+    &:hover
+        color: $pinky   
+
+.logo
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: center 
+    justify-content: center
+    margin-bottom: 100px
+    opacity: 2
+    z-index: 1
 
 
-//font-familys
-font-family: 'Amatic SC', cursive
-font-family: 'Press Start 2P', cursive
-font-family: 'Permanent Marker', cursive
-font-family: 'Fredoka One', cursive
-font-family: 'Dosis', sans-serif
-font-family: 'Roboto', sans-serif
-font-family: 'Raleway', sans-serif
+.cursach
+    display: block
+    font-size: 8em
+    z-index: 99
+
+.block
+    // display: block
+    // font-size: 2.5em
+    // color: $space_gray
+    // font-family: 'Dosis'
+    // font-weight: 800
+    // background-color: $yellow_navi
+    // width: 300px
+    // height: 100px
+    // box-shadow: 0px 4px 70px -16px $yellow_navi
+    // border-radius: 5px
+
+.navi
+    color: $yellow_navi
+    display: block
+    font-size: 10em
+    z-index: 99
+
+@media (max-width: 960px)
+    nav
+        width: 75vh
+    .cursach
+        font-size: 5em
+    
