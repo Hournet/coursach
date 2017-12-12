@@ -10,6 +10,9 @@ body {
   align-content: center;
   justify-content: center; }
 
+a {
+  text-decoration: none; }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -63,6 +66,24 @@ input[type="submit"] {
   display: block;
   font-size: 10em;
   z-index: 99; }
+
+.follow {
+  display: flex;
+  line-height: 100px;
+  justify-content: center;
+  font-size: 2.5em;
+  color: #263238;
+  font-family: 'Dosis';
+  font-weight: 800;
+  background-color: #fff200;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0px 4px 70px -16px #fff200;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer; }
+  .follow:hover {
+    color: #FF80AB; }
 
 @media (max-width: 960px) {
   nav {
